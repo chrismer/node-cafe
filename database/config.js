@@ -5,7 +5,7 @@ const mongoose = require('mongoose');
 const dbConnection = async() => {
 
     try {
-        const URL = process.env.MONGODB_CNN || 'mongodb://localhost:27017/cafe';
+        const URL = process.env.MONGODB_CNN;
          mongoose.connect(URL, {});
 
         console.log('DB conexion establecida');
